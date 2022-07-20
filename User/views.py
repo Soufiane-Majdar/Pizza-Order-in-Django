@@ -4,11 +4,11 @@ from django.shortcuts import render,HttpResponse
 
 # Login function
 def login(request):
-    return HttpResponse("Login")
+    return render(request,'User/login.html')
 
 # Register function
 def register(request):
-    return HttpResponse("Register")
+    return render(request,'User/register.html')
 
 # logout function
 def logout(request):
@@ -16,4 +16,4 @@ def logout(request):
 
 # profile function
 def profile(request):
-    return HttpResponse("Profile")
+    return render(request,'User/profile.html')

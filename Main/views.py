@@ -1,15 +1,15 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
 #Home function
 def home(request):
-    return HttpResponse("Home")
+    return render(request,'Main/home.html')
 
 # item detail function
 def item_detail(request,id):
-    return HttpResponse("Item Detail: " + str(id))
+    return render(request,'Main/item_detail.html',{'id':id})
 
 # Contact us function
 def contact(request):
-    return HttpResponse("Contact us")
+    return render(request,'Main/contact.html')
