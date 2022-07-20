@@ -31,10 +31,11 @@ $
 $
 $ # Access the web app in browser: http://127.0.0.1:8000/
 ```
+## UML
+<img src="readme_IMG/UML.png" />
+
 
 ## Demo :
-### UML
-<img src="readme_IMG/UML.png" />
 
 ### Admin Panel
 <img src="readme_IMG/Admin_panel.png" />
