@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Pizza Shop Website Design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="#home" class="logo">Pizza.</a>
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#order">order</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="{% url 'User:login' %}">
+                    <div id="user-btn" class="fas fa-user">
+
+                    </div>
+                </a>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <!-- header section ends -->
+
+
+
+
+    <!-- home section starts  -->
+    {% block content %} {% endblock content%}
+    <!-- home section ends  -->
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+123-456-7890</p>
+                <p>+111-222-3333</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>our address</h3>
+                <p>mumbai, india - 400104</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>00:09am to 00:10pm</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <p>shaikhanas@gmail.com</p>
+                <p>anasbhai@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="credit">
+            &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

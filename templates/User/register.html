@@ -1,1 +1,43 @@
-<h1>Register</h1>
+{% extends "base.html" %} {% block content %}
+
+
+<div class="user-account active">
+
+    <section>
+        <a href="{% url 'home' %}">
+            <h1>Home</h1>
+        </a>
+        <a href="{% url 'User:login' %}">
+            <div id="close-account"><span>Login</span></div>
+        </a>
+
+        <div class="user">
+            <p><span>you are not logged in now!</span></p>
+        </div>
+
+        <div class="display-orders">
+            <p>pizza-1 <span>( $3/- x 2 )</span></p>
+            <p>pizza 03 <span>( $2/- x 1 )</span></p>
+            <p>pizza 06 <span>( $4/- x 4 )</span></p>
+            <p>pizza 07 <span>( $2/- x 1 )</span></p>
+        </div>
+
+        <div class="flex">
+
+
+            <form action="" method="post">
+                <h3>register now</h3>
+                <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+                <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+                <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+                <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+                <input type="submit" value="register now" name="register" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock content %}

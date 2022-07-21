@@ -9,7 +9,8 @@ from django.utils import timezone
 class MenuItem(models.Model):
     name = models.CharField(max_length=30, null=True)
     price = models.DecimalField(max_digits=5, decimal_places=2)
-    type = models.CharField(max_length=30, null=True)
+    image = models.ImageField(upload_to='MenuItems/', null=True, blank=True)
+    type = models.CharField(max_length=30, null=True,blank=True)
     about = models.TextField(blank=True, null=True)
 
     def __str__(self):
