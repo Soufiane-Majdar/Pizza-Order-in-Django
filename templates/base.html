@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Pizza Shop Website Design</title>
+    <title>Pizza Shop</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -28,10 +28,11 @@
             <a href="#home" class="logo">Pizza.</a>
 
             <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#about">about</a>
-                <a href="#menu">menu</a>
-                <a href="#order">order</a>
+                <a href="{%url 'home' %}#home">home</a>
+                <a href="{%url 'home' %}#about">about</a>
+                <a href="{%url 'home' %}#menu">menu</a>
+                <a href="{%url 'home' %}#order">order</a>
+                <a href="{%url 'contact' %}">Contact Us</a>
             </nav>
 
             <div class="icons">

@@ -130,8 +130,7 @@ section {
 }
 
 .user-account {
-    position: fixed;
-    top: 0;
+    margin-top: 70px;
     right: -110%;
     width: 100%;
     z-index: 1100;
@@ -167,6 +166,7 @@ section {
 }
 
 .user-account .user {
+    margin-top: 20px;
     padding: 1.5rem;
     text-align: center;
     background-color: var(--light-bg);
@@ -546,9 +546,11 @@ section {
 }
 
 .menu .box-container .box .name {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--black);
     margin: .5rem 0;
+    font-weight: bold;
+    font-family: Rroboto;
 }
 
 .menu .box-container .box form {

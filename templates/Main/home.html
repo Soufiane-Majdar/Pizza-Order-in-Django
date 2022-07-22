@@ -184,95 +184,24 @@
 
     <div class="box-container">
 
+        {% for item in MenuItems %}
         <div class="box">
-            <div class="price">$<span>2</span>/-</div>
-            <img src="/static/images/pizza-1.jpg" alt="">
-            <div class="name">pizza 1</div>
+            <div class="price">
+                <h5>{{ item.price }}</h5>
+                <h6>MAD</h6>
+            </div>
+            <img src="/media/{{ item.image }}" alt="">
+            <div class="name">{{ item.name }}</div>
             <form action="" method="post">
                 <input type="number" min="1" max="100" value="1" class="qty" name="qty">
                 <input type="submit" value="add to cart" name="add_to_cart" class="btn">
             </form>
         </div>
+        {% endfor %}
 
-        <div class="box">
-            <div class="price">$<span>4</span>/-</div>
-            <img src="/static/images/pizza-2.jpg" alt="">
-            <div class="name">pizza 2</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
 
-        <div class="box">
-            <div class="price">$<span>2</span>/-</div>
-            <img src="/static/images/pizza-3.jpg" alt="">
-            <div class="name">pizza 3</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
 
-        <div class="box">
-            <div class="price">$<span>3</span>/-</div>
-            <img src="/static/images/pizza-4.jpg" alt="">
-            <div class="name">pizza 4</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
 
-        <div class="box">
-            <div class="price">$<span>2</span>/-</div>
-            <img src="/static/images/pizza-5.jpg" alt="">
-            <div class="name">pizza 5</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
-
-        <div class="box">
-            <div class="price">$<span>4</span>/-</div>
-            <img src="/static/images/pizza-6.jpg" alt="">
-            <div class="name">pizza 6</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
-
-        <div class="box">
-            <div class="price">$<span>2</span>/-</div>
-            <img src="/static/images/pizza-7.jpg" alt="">
-            <div class="name">pizza 7</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
-
-        <div class="box">
-            <div class="price">$<span>3</span>/-</div>
-            <img src="/static/images/pizza-8.jpg" alt="">
-            <div class="name">pizza 8</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
-
-        <div class="box">
-            <div class="price">$<span>4</span>/-</div>
-            <img src="/static/images/pizza-9.jpg" alt="">
-            <div class="name">pizza 9</div>
-            <form action="" method="post">
-                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-            </form>
-        </div>
 
     </div>
 

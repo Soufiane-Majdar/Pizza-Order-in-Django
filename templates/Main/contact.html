@@ -1,1 +1,38 @@
-<h1>Contact</h1>
+{% extends "base.html" %} {% block content %}
+
+<div class="user-account active">
+
+    {% if success %}
+    <div class="user">
+        <p>{{ success }}</p>
+    </div>
+    {% elif error %}
+    <div class="user">
+        <p><span>{{ error }}</span></p>
+    </div>
+    {% endif %}
+
+    <section>
+
+
+
+        <div class="flex">
+
+
+            <form action="" method="post">
+                {% csrf_token %}
+                <h3>Contact Us</h3>
+                <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="75">
+                <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="40">
+                <input type="text" name="subject" required class="box" placeholder="subject" maxlength="20">
+                <textarea name="message" required class="box" placeholder="message" maxlength="200"></textarea>
+                <input type="submit" value="send message" name="register" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
+
+{% endblock content %}
