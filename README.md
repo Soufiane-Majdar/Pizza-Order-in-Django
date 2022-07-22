@@ -42,4 +42,7 @@ $ # Access the web app in browser: http://127.0.0.1:8000/
 
 ### Contact Us
 <img src="readme_IMG/Contact_US.png" />
-<img src="readme_IMG/Contact_US_mobile.png" />
+
+### Register
+<img src="readme_IMG/Regester.png" />
+
