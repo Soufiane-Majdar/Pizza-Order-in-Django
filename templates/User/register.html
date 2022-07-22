@@ -9,9 +9,16 @@
             <div id="close-account"><span>Login</span></div>
         </a>
 
+        {% if success %}
         <div class="user">
-            <p><span>you are not logged in now!</span></p>
+            <p>{{ success }}</p>
         </div>
+        {% elif error %}
+        <div class="user">
+            <p><span>{{ error }}</span></p>
+        </div>
+        {% endif %}
+
 
         <div class="display-orders">
             <p>pizza-1 <span>( $3/- x 2 )</span></p>
@@ -24,11 +31,25 @@
 
 
             <form action="" method="post">
+                {% csrf_token %}
                 <h3>register now</h3>
-                <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
-                <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
-                <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
-                <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+                <input type="text" name="first_name" required class="box" placeholder="enter your First name" maxlength="100">
+                <input type="text" name="last_name" required class="box" placeholder="enter your Last name" maxlength="100">
+                <input type="text" name="email" required class="box" placeholder="enter your email" maxlength="100">
+                <input type="password" name="password" required class="box" placeholder="enter your password" maxlength="100">
+                <!-- phone-->
+                <input type="text" name="phone" required class="box" placeholder="enter your phone" maxlength="100">
+                <!-- address-->
+                <input type="text" name="address" required class="box" placeholder="enter your address" maxlength="100">
+                <!-- city selector-->
+                <select name="city" required class="box">
+                    <option value="">select city</option>
+                    <option value="1">Rabat</option>
+                    <option value="2">Kenitra</option>
+                    <option value="3">Tanger</option>     
+                </select>
+                <!-- Zipcode-->
+                <input type="text" name="zip_code" required class="box" placeholder="enter your zipcode" maxlength="100">
                 <input type="submit" value="register now" name="register" class="btn">
             </form>
 
