@@ -40,3 +40,6 @@ $ # Access the web app in browser: http://127.0.0.1:8000/
 ### Admin Panel
 <img src="readme_IMG/Admin_panel.png" />
 
+### Contact Us
+<img src="readme_IMG/Contact_US.png" />
+<img src="readme_IMG/Contact_US_mobile.png" />
